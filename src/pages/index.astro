@@ -1,0 +1,16 @@
+---
+import Features from "../components/Features"
+import Hero from "../components/Hero"
+import Cards from "../components/Cards"
+import Partners from "../components/Partners"
+import Layout from "../layouts/Layout.astro"
+---
+
+<Layout>
+  <main class="px-2">
+    <Hero client:only />
+    <Features client:only />
+    <Cards />
+    <Partners />
+  </main>
+</Layout>
