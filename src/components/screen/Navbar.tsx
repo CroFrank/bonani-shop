@@ -22,7 +22,7 @@ const NavBar = () => {
             Home
           </a>
           <a
-            href="/products"
+            href="/cake-toppers"
             className="text-slate-600 hover:text-slate-500 hover:underline"
           >
             Cake-Toppers

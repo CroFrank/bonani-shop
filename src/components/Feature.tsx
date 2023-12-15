@@ -22,9 +22,9 @@ const Feature = ({
           height="20"
           fill="none"
           stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           className="text-zelena"
         >
           <path d="M20 6L9 17l-5-5" />

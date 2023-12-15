@@ -4,15 +4,21 @@ import Logo from "../ui/Logo"
 const LINKS = [
   {
     title: "Proizvodi",
-    items: ["Cake Toppers"],
+    items: [{ text: "Cake Toppers", link: "/cake-toppers" }],
   },
   {
     title: "Obrt",
-    items: ["O Nama"],
+    items: [
+      { text: "O Nama", link: "/about" },
+      { text: "Opći Uvjeti", link: "/terms" },
+    ],
   },
   {
     title: "Kontakt",
-    items: ["Mail", "Whatsapp"],
+    items: [
+      { text: "Mail", link: "/" },
+      { text: "Whatsapp", link: "/" },
+    ],
   },
 ]
 
@@ -34,15 +40,15 @@ export function Footer() {
                 >
                   {title}
                 </Typography>
-                {items.map((link) => (
-                  <li key={link}>
+                {items.map((item) => (
+                  <li key={item.text}>
                     <Typography
                       as="a"
-                      href="#"
+                      href={item.link}
                       color="gray"
                       className="py-1.5 font-normal transition-colors hover:text-blue-gray-900"
                     >
-                      {link}
+                      {item.text}
                     </Typography>
                   </li>
                 ))}

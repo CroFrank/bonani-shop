@@ -11,17 +11,17 @@ const Partners = () => {
         style={{ maxWidth: "1900px" }}
       >
         <Partner
-          src="/butik-torti.png"
+          src="/partners/butik-torti.png"
           title="Butik Torti"
           link="https://slasticarnica.com/"
         />
         <Partner
-          src="/2sweet.png"
+          src="/partners/2sweet.png"
           title="2Sweet"
           link="https://www.2sweet.eu/"
         />
         <Partner
-          src="/sweet-family.png"
+          src="/partners/sweet-family.png"
           title="Sweet Family"
           link="https://slasticarnica-sweet-family.eatbu.com/"
         />

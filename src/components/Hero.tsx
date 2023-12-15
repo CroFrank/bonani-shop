@@ -14,7 +14,7 @@ const Hero = () => {
         <HeroCard
           title="Cake Toppers"
           description="Neizostavni sastojak svake torte"
-          src="/twst.jpg"
+          src="carousel/cake-topper.jpeg"
         />
         <HeroCard
           title="Stiže uskoro"

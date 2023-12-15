@@ -1,13 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import AboutMe from "../components/AboutMe"
 ---
 
 <style>
-  section {
+  .section {
     background-image: url("/bojana.jpg");
     background-size: cover;
+    background-position: center;
   }
 </style>
 <Layout>
-  <section class="h-96 container mx-auto"></section>
+  <section class="flex flex-col items-center mb-28">
+    <div class="section h-half mx-auto w-full mb-20"></div>
+    <AboutMe />
+  </section>
 </Layout>

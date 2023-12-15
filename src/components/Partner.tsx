@@ -38,26 +38,3 @@ export function Partner({
     </Card>
   )
 }
-// <div
-//   className={`px-3 py-5 flex w-full ${
-//     reverse ? "flex-row-reverse" : ""
-//   } justify-around`}
-//   style={{ maxWidth: "1400px" }}
-// >
-//   <img src={src} alt="" className="w-5/12 h-auto object-cover rounded-xl" />
-//   <div className="w-5/12 flex flex-col items-center justify-center">
-//     <h3 className="text-2xl font-semibold pt-5 pb-16">{title}</h3>
-//     <div className="flex justify-center items-center gap-3 mb-5">
-//       <CheckMark />
-//       <p>Najbolji okusi</p>
-//     </div>
-//     <div className="flex justify-center items-center gap-3 mb-5">
-//       <CheckMark />
-//       <p>Kolači i torte</p>
-//     </div>
-//     <div className="flex justify-center items-center gap-3 mb-5">
-//       <CheckMark />
-//       <p>Kvalitetni sastojci</p>
-//     </div>
-//   </div>
-// </div>
