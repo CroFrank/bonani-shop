@@ -10,11 +10,11 @@ const NavBar = () => {
     <div className="bg-roza1 sticky z-40 top-0 w-full p-5 flex items-center shadow-sm">
       <nav className="container flex md:flex-col justify-between items-center mx-auto h-full">
         <div className="flex items-center">
-          <a href="/" className="text-4xl font-bold md:pt-7 md:mb-5">
+          <a href="/" className="text-4xl font-bold">
             <img src="/LOGO.ico" alt="bonani logo" />
           </a>
         </div>
-        <div className="hidden space-x-5 md:flex md:mt-auto tracking-wide">
+        <div className="hidden space-x-5 md:flex tracking-wide">
           <a
             href="/"
             className="text-slate-600 hover:text-slate-500 hover:underline"

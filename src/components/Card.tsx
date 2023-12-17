@@ -7,7 +7,7 @@ interface CardProps {
 
 const Card = ({ src, alt, attribute, title }: CardProps) => {
   return (
-    <a href="/" className="w-full">
+    <a href="/cake-toppers" className="w-full">
       <div className="relative rounded-sm h-72">
         <img
           src={src}

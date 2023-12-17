@@ -2,7 +2,6 @@ import {
   Card,
   CardHeader,
   CardBody,
-  CardFooter,
   Typography,
   Button,
   Popover,
@@ -32,7 +31,7 @@ const Images = ({
         {images.map((image: CakeTopperProps, i: number) => (
           <div
             key={i}
-            className="relative flex h-72 justify-end items-end overflow-hidden rounded-md shadow-lg md:h-96"
+            className="relative flex h-96 justify-end items-end overflow-hidden rounded-md shadow-lg"
           >
             <div className="absolute inset-0 flex h-full w-full object-cover object-center">
               <Card className="w-full">
