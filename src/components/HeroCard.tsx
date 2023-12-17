@@ -1,12 +1,13 @@
-import { Button, Typography } from "@material-tailwind/react"
+import { Button, Typography } from "@material-tailwind/react";
 
 interface HeroCardProps {
-  title: string
-  description: string
-  src: string
+  title: string;
+  description: string;
+  src: string;
+  route: string;
 }
 
-const HeroCard = ({ title, description, src }: HeroCardProps) => {
+const HeroCard = ({ title, description, src, route }: HeroCardProps) => {
   return (
     <div className="relative h-full w-full">
       <img src={src} alt="Cake topper" className="h-full w-full object-cover" />
@@ -23,18 +24,20 @@ const HeroCard = ({ title, description, src }: HeroCardProps) => {
             {description}
           </Typography>
           <div className="flex justify-center gap-2">
-            <Button
-              size="sm"
-              color="white"
-              variant="outlined"
-              className="xl:text-xl"
-            >
-              Zaviri u ponudu
-            </Button>
+            <a href={route}>
+              <Button
+                size="sm"
+                color="white"
+                variant="outlined"
+                className="xl:text-xl"
+              >
+                Zaviri u ponudu
+              </Button>
+            </a>
           </div>
         </div>
       </div>
     </div>
-  )
-}
-export default HeroCard
+  );
+};
+export default HeroCard;

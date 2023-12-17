@@ -1,4 +1,4 @@
-import pkg from "@material-tailwind/react"
+import pkg from "@material-tailwind/react";
 const {
   Timeline,
   TimelineItem,
@@ -7,7 +7,7 @@ const {
   TimelineIcon,
   TimelineBody,
   Typography,
-} = pkg
+} = pkg;
 
 const AboutMe = () => {
   return (
@@ -86,6 +86,6 @@ const AboutMe = () => {
         </TimelineItem>
       </Timeline>
     </div>
-  )
-}
-export default AboutMe
+  );
+};
+export default AboutMe;

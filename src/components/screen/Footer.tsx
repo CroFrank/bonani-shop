@@ -1,5 +1,5 @@
-import { Typography } from "@material-tailwind/react"
-import Logo from "../ui/Logo"
+import { Typography } from "@material-tailwind/react";
+import Logo from "../ui/Logo";
 
 const LINKS = [
   {
@@ -20,7 +20,7 @@ const LINKS = [
       { text: "Whatsapp", link: "/" },
     ],
   },
-]
+];
 
 export function Footer() {
   return (
@@ -106,5 +106,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

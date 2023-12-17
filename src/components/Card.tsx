@@ -1,8 +1,8 @@
 interface CardProps {
-  src: string
-  alt: string
-  attribute?: string
-  title: string
+  src: string;
+  alt: string;
+  attribute?: string;
+  title: string;
 }
 
 const Card = ({ src, alt, attribute, title }: CardProps) => {
@@ -26,6 +26,6 @@ const Card = ({ src, alt, attribute, title }: CardProps) => {
         <p className="px-3 py-2 text-center">{title}</p>
       </div>
     </a>
-  )
-}
-export default Card
+  );
+};
+export default Card;

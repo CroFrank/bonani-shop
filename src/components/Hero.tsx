@@ -1,5 +1,5 @@
-import { Carousel } from "@material-tailwind/react"
-import HeroCard from "./HeroCard"
+import { Carousel } from "@material-tailwind/react";
+import HeroCard from "./HeroCard";
 
 const Hero = () => {
   return (
@@ -15,20 +15,23 @@ const Hero = () => {
           title="Cake Toppers"
           description="Neizostavni sastojak svake torte"
           src="carousel/cake-topper.jpeg"
+          route="/cake-toppers"
         />
         <HeroCard
           title="Stiže uskoro"
           description=""
           src="https://plus.unsplash.com/premium_photo-1664288966707-b3bbfcf45c65?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          route="/"
         />
         <HeroCard
           title="Stiže uskoro"
           description=""
           src="https://images.unsplash.com/photo-1607346705418-06858238c40b?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          route="/"
         />
       </Carousel>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

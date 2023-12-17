@@ -1,4 +1,4 @@
-import Card from "./Card"
+import Card from "./Card";
 
 const Cards = () => {
   return (
@@ -21,11 +21,11 @@ const Cards = () => {
         title="3D sa punjenjem"
       />
       <Card
-        src="/cake-toppers/pleksi/pleksi.jpg"
+        src="/cake-toppers/pleksi/h-bday-pleksi.jpg"
         alt="Cake Topper od pleksiglasa"
         title="Cake topper od pleksiglasa"
       />
     </section>
-  )
-}
-export default Cards
+  );
+};
+export default Cards;

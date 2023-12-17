@@ -1,4 +1,4 @@
-import pkg from "@material-tailwind/react"
+import pkg from "@material-tailwind/react";
 const {
   Timeline,
   TimelineItem,
@@ -7,7 +7,7 @@ const {
   TimelineIcon,
   TimelineBody,
   Typography,
-} = pkg
+} = pkg;
 
 const Term = () => {
   return (
@@ -157,6 +157,6 @@ const Term = () => {
         </TimelineItem>
       </Timeline>
     </div>
-  )
-}
-export default Term
+  );
+};
+export default Term;

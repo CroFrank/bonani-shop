@@ -1,4 +1,4 @@
-import { Partner } from "./Partner"
+import { Partner } from "./Partner";
 
 const Partners = () => {
   return (
@@ -27,6 +27,6 @@ const Partners = () => {
         />
       </div>
     </section>
-  )
-}
-export default Partners
+  );
+};
+export default Partners;

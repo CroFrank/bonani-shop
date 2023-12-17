@@ -1,14 +1,14 @@
-import pkg from "@material-tailwind/react"
-const { Card, CardHeader, CardBody, CardFooter, Typography, Button } = pkg
+import pkg from "@material-tailwind/react";
+const { Card, CardHeader, CardBody, CardFooter, Typography, Button } = pkg;
 
 export function Partner({
   src,
   title,
   link,
 }: {
-  src: string
-  title: string
-  link: string
+  src: string;
+  title: string;
+  link: string;
 }) {
   return (
     <Card className="mb-20 w-full sm:w-2/3 lg:w-1/4">
@@ -36,5 +36,5 @@ export function Partner({
         </CardFooter>
       </div>
     </Card>
-  )
+  );
 }

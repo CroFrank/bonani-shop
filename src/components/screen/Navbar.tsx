@@ -1,20 +1,20 @@
-import { useState } from "react"
+import { useState } from "react";
 
 const NavBar = () => {
-  const [isMenuVisible, setMenuVisible] = useState(false)
+  const [isMenuVisible, setMenuVisible] = useState(false);
   const toggleMenu = () => {
-    setMenuVisible(!isMenuVisible)
-  }
+    setMenuVisible(!isMenuVisible);
+  };
 
   return (
-    <div className="bg-roza1 sticky top-0 z-50 w-full p-5 flex items-center shadow-2xl">
+    <div className="bg-roza1 sticky z-40 top-0 w-full p-5 flex items-center shadow-sm">
       <nav className="container flex md:flex-col justify-between items-center mx-auto h-full">
         <div className="flex items-center">
-          <a href="/" className="text-4xl font-bold md:pt-7 md:pb-5">
+          <a href="/" className="text-4xl font-bold md:pt-7 md:mb-5">
             <img src="/LOGO.ico" alt="bonani logo" />
           </a>
         </div>
-        <div className="hidden space-x-4 md:flex md:mt-auto">
+        <div className="hidden space-x-5 md:flex md:mt-auto tracking-wide">
           <a
             href="/"
             className="text-slate-600 hover:text-slate-500 hover:underline"
@@ -62,7 +62,7 @@ const NavBar = () => {
 
       {isMenuVisible && (
         <div
-          className="fixed inset-0 z-50 flex items-start justify-center bg-black bg-opacity-90 text-white"
+          className="fixed inset-0 z-40 flex items-start justify-center bg-black bg-opacity-90 text-white"
           onClick={() => toggleMenu()}
         >
           <div className="m-5 flex w-full flex-col items-start justify-between bg-components">
@@ -112,7 +112,7 @@ const NavBar = () => {
         </div>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;

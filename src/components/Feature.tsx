@@ -3,9 +3,9 @@ const Feature = ({
   scroll,
   goal,
 }: {
-  text: string
-  scroll: number
-  goal: number
+  text: string;
+  scroll: number;
+  goal: number;
 }) => {
   return (
     <div className={`text-roza3`}>
@@ -31,7 +31,7 @@ const Feature = ({
         </svg>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Feature
+export default Feature;
