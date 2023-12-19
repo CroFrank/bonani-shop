@@ -22,6 +22,12 @@ export const data = [
         text: "Cijena se odnosi na sve toppere vidljive na slici, 9 toppera.",
         price: "9 €",
       },
+      {
+        id: "Unicorn flowers",
+        img: "unicorn-flowers.jpeg",
+        text: "Cijena je za 1 kom. Dimenzije cca. Širina 5cm x Visina 5cm + štapić (prilagodivo). Svi topperi imaju pričvršćen plastični ili drveni štapić za učvrščivanje na tortu.",
+        price: "0,5 €",
+      },
     ],
     alt: "Cake topper od hammer papira",
     path: "hammer",
@@ -136,6 +142,12 @@ export const data = [
         text: "Dimenzije cca. Širina 13cm x Visina 13cm + štapić (prilagodivo). Napravljen u više slojeva. Leptirići spojeni sa prozirnim trakicama koji se njišu.",
         price: "7,5 €",
       },
+      {
+        id: "Sara 3",
+        img: "sara3.jpeg",
+        text: "Dimenzije cca. Širina 11cm x Visina 15cm + štapić (prilagodivo). Napravljen u više slojeva.",
+        price: "10 €",
+      },
     ],
     alt: "Cake topper u više slojeva",
     path: "3d",
@@ -147,6 +159,12 @@ export const data = [
       {
         id: "Happy Birthday - pleksi",
         img: "h-bday-pleksi.jpg",
+        text: "Dimenzije Širina 10cm x Visina 10cm",
+        price: "10,5 €",
+      },
+      {
+        id: "Raw vegan - pleksi",
+        img: "rawvegan.jpeg",
         text: "Dimenzije Širina 10cm x Visina 10cm",
         price: "10,5 €",
       },

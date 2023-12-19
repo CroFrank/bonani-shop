@@ -1,5 +1,6 @@
 import { useRef, type FormEvent } from "react";
 import emailjs from "@emailjs/browser";
+import { Input } from "@material-tailwind/react";
 
 const ContactForm = ({
   service,
@@ -35,39 +36,40 @@ const ContactForm = ({
       onSubmit={sendEmail}
       className="max-w-md mx-auto mt-8 bg-white p-8 border rounded-md shadow-md"
     >
-      <label className="block mb-2 text-sm font-bold text-gray-600">
-        Tvoje ime ili nadimak
-      </label>
-      <input
-        type="text"
-        name="from_name"
-        className="w-full p-2 border rounded-md"
-        required
-        minLength={2}
-        maxLength={20}
-      />
-      <label className="block mt-4 mb-2 text-sm font-bold text-gray-600">
-        Tvoj email
-      </label>
-      <input
-        type="email"
-        name="from_email"
-        className="w-full p-2 border rounded-md"
-        required
-        minLength={6}
-        maxLength={30}
-      />
-      <label className="block mt-4 mb-2 text-sm font-bold text-gray-600">
-        Poruka
-      </label>
-      <textarea
-        name="message"
-        className="w-full p-2 border rounded-md"
-        rows={6}
-        required
-        minLength={3}
-        maxLength={350}
-      ></textarea>
+      <div className="mb-10">
+        <Input
+          label="Tvoje ime ili nadimak"
+          name="from_name"
+          required
+          minLength={2}
+          maxLength={20}
+          type="text"
+          crossOrigin="anonymous"
+        />
+      </div>
+      <div className="mb-10">
+        <Input
+          label="Tvoj email"
+          type="email"
+          name="from_email"
+          required
+          minLength={6}
+          maxLength={30}
+          crossOrigin="anonymous"
+        />
+      </div>
+      <div className="mb-8">
+        <Input
+          label="Poruka"
+          name="message"
+          className="w-full p-2 border rounded-md"
+          containerProps={{ className: "min-h-[100px]" }}
+          required
+          minLength={3}
+          maxLength={350}
+          crossOrigin="anonymous"
+        />
+      </div>
       <label className="text-sm">
         <input
           type="checkbox"
@@ -82,7 +84,7 @@ const ContactForm = ({
       </label>
       <button
         type="submit"
-        className="mt-4 w-full bg-zelena text-white p-2 rounded-md hover:scale-105"
+        className="mt-8 w-full bg-roza3 text-white p-2 rounded-md hover:scale-105"
       >
         Pošalji
       </button>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Logo from "../ui/Logo";
 
 const NavBar = () => {
   const [isMenuVisible, setMenuVisible] = useState(false);
@@ -11,7 +12,7 @@ const NavBar = () => {
       <nav className="container flex md:flex-col justify-between items-center mx-auto h-full">
         <div className="flex items-center">
           <a href="/" className="text-4xl font-bold">
-            <img src="/LOGO.ico" alt="bonani logo" />
+            <Logo />
           </a>
         </div>
         <div className="hidden space-x-5 md:flex tracking-wide">
@@ -62,13 +63,13 @@ const NavBar = () => {
 
       {isMenuVisible && (
         <div
-          className="fixed inset-0 z-40 flex items-start justify-center bg-black bg-opacity-90 text-white"
+          className="fixed inset-0 z-50 flex items-start justify-center bg-zelena  text-white"
           onClick={() => toggleMenu()}
         >
           <div className="m-5 flex w-full flex-col items-start justify-between bg-components">
             <div className="flex w-full items-center justify-between p-5">
               <a href="/" className="text-xl font-bold">
-                BONANI
+                <Logo />
               </a>
               <button
                 className="p-5 text-xl text-white font-semibold"

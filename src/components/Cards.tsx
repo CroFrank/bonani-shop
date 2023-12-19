@@ -6,24 +6,24 @@ const Cards = () => {
       <Card
         src="/cake-toppers/sjajni/happy-30-birthday.jpeg"
         alt="Cake Topper rođendan"
-        title="Šljokičavi i svjetlucavi"
+        title="Glitter"
       />
       <Card
         src="/cake-toppers/zlatni/n&t.jpeg"
         alt="Cake topper shaker, special"
         attribute="Best Seller"
-        title="Zlatni cake topper"
+        title="Mirror"
       />
       <Card
         src="/cake-toppers/3d/mala-sirena.jpeg"
         alt="Cake Topper shaker, special"
         attribute="Special"
-        title="3D sa punjenjem"
+        title="3D "
       />
       <Card
         src="/cake-toppers/pleksi/h-bday-pleksi.jpg"
         alt="Cake Topper od pleksiglasa"
-        title="Cake topper od pleksiglasa"
+        title="Pleksiglas"
       />
     </section>
   );
