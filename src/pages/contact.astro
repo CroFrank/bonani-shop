@@ -1,9 +1,44 @@
 ---
-import ContactForm from "../components/Contact"
+import ContactForm from "../components/ContactForm"
 import Layout from "../layouts/Layout.astro"
+const service = import.meta.env.SERVICE
+const template = import.meta.env.TEMPLATE
+const id = import.meta.env.ID
 ---
 
 <Layout>
-  in progress
-  <!-- <ContactForm /> -->
+  <section class="my-28 px-3">
+    <div class="text-center mb-14">
+      <h2 class="text-4xl mb-4">Kontakt</h2>
+      <p>
+        Slobodno nam se javi putem maila, whatsapp-a, instagram-a ili
+        facebook-a. Odgovaramo jako brzo :)
+      </p>
+    </div>
+    <ContactForm client:only service={service} template={template} id={id} />
+    <div
+      class="my-10 flex flex-col items-center gap-5 md:flex-row md:justify-around mx-auto"
+      style={{ maxWidth: "1000px" }}
+    >
+      <a
+        aria-label="Chat on WhatsApp"
+        href="https://wa.me/+385976785381?text=Pozdrav,%20zanimaju%20me%20vaši%20proizvodi."
+        target="_blank"
+      >
+        <img
+          alt="WhatsApp chat ikona"
+          src="/WhatsAppButtonGreenMedium.png"
+          width={200}
+          height={200}
+          class="hover:scale-105"
+        />
+      </a>
+      <a class="font-semibold" href="tel:+385976785381"> +385 97 678 5381</a>
+      <a
+        href="mailto:your.email@example.com"
+        target="_blank"
+        class="font-semibold">shop.bonani@gmail.com</a
+      >
+    </div>
+  </section>
 </Layout>

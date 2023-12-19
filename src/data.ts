@@ -9,12 +9,7 @@ export const data = [
         text: "Cijena se odnosi na sve toppere vidljive na slici, 7 likova i jedan veći topper. Svi topperi imaju pričvršćen plastični ili drveni štapić za učvrščivanje na tortu.",
         price: "11 €",
       },
-      {
-        id: "Aloha flamingo",
-        img: "aloha-flamingo.jpg",
-        text: "Dimenzije cca. Širina 15cm x Visina 13cm + štapić (prilagodivo). Svi topperi imaju pričvršćen plastični ili drveni štapić za učvrščivanje na tortu.",
-        price: "7 €",
-      },
+
       {
         id: "Ante is one",
         img: "anteisone.jpeg",
@@ -47,6 +42,12 @@ export const data = [
         text: "Dimenzije cca. Širina 15cm x Visina 12cm + štapić (prilagodivo). Svi topperi imaju pričvršćen plastični ili drveni štapić za učvrščivanje na tortu.",
         price: "7.5 €",
       },
+      {
+        id: "Family",
+        img: "family.jpeg",
+        text: "Dimenzije cca. Širina 13cm x Visina 15cm + štapić (prilagodivo). Svi topperi imaju pričvršćen plastični ili drveni štapić za učvrščivanje na tortu.",
+        price: "6,5 €",
+      },
     ],
     alt: "Cake topper od zlatnog papira",
     path: "zlatni",
@@ -70,10 +71,22 @@ export const data = [
     value: "3d",
     imgs: [
       {
+        id: "Eva 3 - SHAKER",
+        img: "eva3.jpeg",
+        text: "Dimenzije cca. Širina 16cm x Visina 15cm + štapić (prilagodivo). Napravljen u više slojeva koji se slažu jedan na drugi u razmaku od par milimetara. Punjeno šljokicama i konfetima.",
+        price: "15 €",
+      },
+      {
         id: "Mala sirena - SHAKER",
         img: "mala-sirena.jpeg",
         text: "Dimenzije cca. Širina 12cm x Visina 15cm + štapić (prilagodivo). Napravljen u više slojeva koji se slažu jedan na drugi u razmaku od par milimetara. Punjeno šljokicama i konfetima.",
         price: "15 €",
+      },
+      {
+        id: "Prva sveta pričest",
+        img: "prva-sveta-pricest.jpeg",
+        text: "Dimenzije cca. Širina 15cm x Visina 12cm + štapić (prilagodivo). Napravljen u više slojeva koji se slažu jedan na drugi u razmaku od par milimetara.",
+        price: "13,5 €",
       },
       {
         id: "Unikorn",
@@ -90,6 +103,12 @@ export const data = [
       {
         id: "Tesa 5",
         img: "tesa5.jpeg",
+        text: "Dimenzije cca. Širina 13cm x Visina 13cm + štapić (prilagodivo). Napravljen u više slojeva.",
+        price: "10 €",
+      },
+      {
+        id: "Nika 4",
+        img: "nika4.jpeg",
         text: "Dimenzije cca. Širina 13cm x Visina 13cm + štapić (prilagodivo). Napravljen u više slojeva.",
         price: "10 €",
       },

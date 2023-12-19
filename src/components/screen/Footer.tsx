@@ -11,20 +11,24 @@ const LINKS = [
     items: [
       { text: "O Nama", link: "/about" },
       { text: "Opći Uvjeti", link: "/terms" },
+      { text: "Politika Privatnosti", link: "/privacy" },
     ],
   },
   {
     title: "Kontakt",
     items: [
-      { text: "Mail", link: "/" },
-      { text: "Whatsapp", link: "/" },
+      { text: "Mail", link: "/contact" },
+      {
+        text: "Whatsapp",
+        link: "https://wa.me/+385976785381?text=Pozdrav,%20zanimaju%20me%20vaši%20proizvodi.",
+      },
     ],
   },
 ];
 
 export function Footer() {
   return (
-    <footer className="relative w-full">
+    <footer className="relative w-full mb-auto">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
           <Typography variant="h5" className="mb-6">
@@ -67,8 +71,9 @@ export function Footer() {
           <div className="flex gap-4 text-blue-gray-900 sm:justify-center items-center">
             <Typography
               as="a"
-              href="#"
+              href="https://www.facebook.com/shop.bonani?locale2=ms_MY"
               className="opacity-80 transition-opacity hover:opacity-100"
+              target="_blank"
             >
               <svg
                 className="h-5 w-5"
@@ -77,16 +82,17 @@ export function Footer() {
                 aria-hidden="true"
               >
                 <path
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                  clip-rule="evenodd"
+                  clipRule="evenodd"
                 />
               </svg>
             </Typography>
             <Typography
               as="a"
-              href="#"
+              href="https://www.instagram.com/bonanicraftanddecor/?igshid=YTQwZjQ0NmI0OA%3D%3D"
               className="opacity-80 transition-opacity hover:opacity-100"
+              target="_blank"
             >
               <svg
                 className="h-5 w-5"

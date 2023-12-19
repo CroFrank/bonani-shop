@@ -87,7 +87,7 @@ const NavBar = () => {
                 Home
               </a>
               <a
-                href="/products"
+                href="/cake-toppers"
                 className="p-5 hover:underline"
                 onClick={() => toggleMenu()}
               >
@@ -101,7 +101,7 @@ const NavBar = () => {
                 Kontakt
               </a>
               <a
-                href="/contact"
+                href="/about"
                 className="p-5 hover:underline"
                 onClick={() => toggleMenu()}
               >

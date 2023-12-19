@@ -44,6 +44,7 @@ const Images = ({
                     src={`/cake-toppers/${path}/${image.img}`}
                     alt={alt}
                     className="h-full w-full object-cover"
+                    loading="lazy"
                   />
                 </CardHeader>
                 <CardBody>
@@ -55,7 +56,7 @@ const Images = ({
                       }}
                     >
                       <PopoverHandler>
-                        <Button>Doznaj Više</Button>
+                        <Button className="bg-roza3">Doznaj Više</Button>
                       </PopoverHandler>
                       <PopoverContent className="z-[999] grid w-full h-2/3 grid-cols-1 md:grid-cols-2 md:w-5/6 xl:w-2/3 2xl:w-1/2 overflow-hidden p-0">
                         <div className="min-h-full !w-full p-3">
