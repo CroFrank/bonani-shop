@@ -23,7 +23,7 @@ const Cards = () => {
       <Card
         src="/cake-toppers/pleksi/h-bday-pleksi.jpg"
         alt="Cake Topper od pleksiglasa"
-        title="Pleksiglas"
+        title="Plexi"
       />
     </section>
   );

@@ -56,7 +56,9 @@ const Images = ({
                       }}
                     >
                       <PopoverHandler>
-                        <Button className="bg-roza3">Doznaj Više</Button>
+                        <Button className="bg-roza3 tracking-wider font-semibold">
+                          Doznaj Više
+                        </Button>
                       </PopoverHandler>
                       <PopoverContent className="z-[999] grid w-full h-2/3 grid-cols-1 md:grid-cols-2 md:w-5/6 xl:w-2/3 2xl:w-1/2 overflow-hidden p-0">
                         <div className="min-h-full !w-full p-3">
@@ -69,39 +71,27 @@ const Images = ({
                         <div className="p-4">
                           <Typography
                             color="blue-gray"
-                            className="mb-5 text-2xl font-bold"
+                            className="mb-5 md:mb-10 md:mt-5 text-2xl md:text-4xl tracking-wider"
                           >
                             {image.id}
                           </Typography>
                           <Typography
                             variant="paragraph"
                             color="gray"
-                            className="mb-14 font-normal text-blue-gray-500"
+                            className="text-sm md:text-lg md:mb-14 font-normal text-blue-gray-500"
                           >
                             {image.text}
                           </Typography>
-                          <a href="/contact" className="-ml-3 inline-block">
+                          <a
+                            href="/contact"
+                            className="mt-4 flex justify-end mr-5"
+                          >
                             <Button
-                              size="lg"
-                              variant="text"
-                              className="flex items-center gap-x-2 capitalize"
+                              size="sm"
+                              variant="outlined"
+                              className="flex items-center gap-x-2 capitalize border-roza3 text-roza3 tracking-wider hover:bg-roza3 hover:text-white"
                             >
                               Pošaljite upit
-                              <svg
-                                width="7"
-                                height="12"
-                                viewBox="0 0 7 12"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M1.25 1.91669L5.33333 6.00002L1.25 10.0834"
-                                  stroke="#212121"
-                                  stroke-width="2"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                />
-                              </svg>
                             </Button>
                           </a>
                         </div>

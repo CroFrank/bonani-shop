@@ -19,9 +19,9 @@ const Features = () => {
   return (
     <section className="container mx-auto flex flex-col items-center gap-3 text-sm lg:text-base md:flex-row sm:justify-between xl:justify-around py-12">
       <Feature text="Personalizirano" scroll={scrollPosition} goal={100} />
-      <Feature text="Ručno rađeno" scroll={scrollPosition} goal={180} />
-      <Feature text="Brza izrada" scroll={scrollPosition} goal={260} />
-      <Feature text="Izrada po narudžbi" scroll={scrollPosition} goal={340} />
+      <Feature text="Ručno rađeno" scroll={scrollPosition} goal={200} />
+      <Feature text="Brza izrada" scroll={scrollPosition} goal={300} />
+      <Feature text="Izrada po narudžbi" scroll={scrollPosition} goal={400} />
     </section>
   );
 };

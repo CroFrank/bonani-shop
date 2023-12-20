@@ -5,17 +5,20 @@ import { CakeTopperImgs } from "../components/CakeTopperImgs"
 
 <Layout>
   <div
-    class="flex min-h-screen flex-col justify-between py-4 sm:py-6 lg:py-8 mb-10"
+    class="flex min-h-screen flex-col justify-between py-4 sm:py-6 lg:py-8 mb-10 bg-roza2"
   >
     <main class="mb-auto">
       <div class="my-8 sm:my-12 container mx-auto md:px-8">
         <h2
-          class="tracking-wide mb-4 text-center md:text-left text-4xl md:text-5xl md:mb-6"
+          class="tracking-wide px-3 mb-4 text-center md:text-left text-4xl md:text-5xl md:mb-6"
         >
           Cake Toppers
         </h2>
-        <p class="text-center md:text-left text-gray-600 md:text-lg">
-          Galerija slika već rađenih toppera
+        <p
+          class="text-center px-3 md:text-left text-gray-600 md:text-lg tracking-wider"
+        >
+          Galerija slika već rađenih toppera, naruči upravo takav ili ćemo
+          izraditi nešto po tvojoj želji
         </p>
       </div>
       <CakeTopperImgs client:only />

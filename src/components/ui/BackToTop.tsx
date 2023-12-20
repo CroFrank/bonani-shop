@@ -4,7 +4,7 @@ const BackToTop = () => {
       type="button"
       aria-label="back to top button"
       data-mdb-ripple="true"
-      className="fixed bottom-5 right-5 inline-block rounded-full bg-yellow-700 hover:-translate-y-2 p-3 text-xs font-medium shadow-md transition duration-150 ease-in-out focus:outline-none focus:ring-0 z-10"
+      className="fixed bottom-5 right-5 inline-block rounded-full text-white bg-zelena hover:bg-zelena/80 hover:-translate-y-2 p-3 text-xs font-medium shadow-md transition duration-150 ease-in-out focus:outline-none focus:ring-0 z-10"
       id="btn-back-to-top"
     >
       <svg

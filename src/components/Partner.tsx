@@ -11,8 +11,11 @@ export function Partner({
   link: string;
 }) {
   return (
-    <Card className="mb-20 w-full sm:w-2/3 lg:w-1/4">
-      <CardHeader color="blue-gray" className="relative h-70">
+    <Card className="mb-20 w-full sm:w-2/3 lg:w-1/4 rounded-none">
+      <CardHeader
+        color="blue-gray"
+        className="relative h-70 rounded-lg shadow-roza2"
+      >
         <img
           src={src}
           alt="Slastičarnica sa kojom surađuje Bonani"
@@ -21,7 +24,11 @@ export function Partner({
       </CardHeader>
       <div className="text-center">
         <CardBody>
-          <Typography variant="h5" color="blue-gray" className="mb-2">
+          <Typography
+            variant="h5"
+            color="blue-gray"
+            className="mb-2 tracking-widest font-normal"
+          >
             {title}
           </Typography>
         </CardBody>
@@ -29,7 +36,7 @@ export function Partner({
           <a
             target="_blank"
             href={link}
-            className="inline-block bg-zelena text-white font py-2 px-4 rounded transition duration-300 hover:bg-roza3"
+            className="inline-block bg-zelena text-white font py-2 px-4 rounded transition duration-300 hover:bg-roza3 tracking-wider"
           >
             Posjeti slastičarnicu
           </a>

@@ -8,7 +8,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="bg-roza1 sticky z-40 top-0 w-full p-5 flex items-center shadow-sm">
+    <div className="bg-roza1 sticky z-40 top-0 w-full p-5 flex items-center shadow-xl">
       <nav className="container flex md:flex-col justify-between items-center mx-auto h-full">
         <div className="flex items-center">
           <a href="/" className="text-4xl font-bold">
@@ -18,25 +18,25 @@ const NavBar = () => {
         <div className="hidden space-x-5 md:flex tracking-wide">
           <a
             href="/"
-            className="text-slate-600 hover:text-slate-500 hover:underline"
+            className="text-gray-700 hover:text-gray-500 hover:underline"
           >
             Home
           </a>
           <a
             href="/cake-toppers"
-            className="text-slate-600 hover:text-slate-500 hover:underline"
+            className="text-gray-700 hover:text-gray-500 hover:underline"
           >
             Cake-Toppers
           </a>
           <a
             href="/contact"
-            className="text-slate-600 hover:text-slate-500 hover:underline"
+            className="text-gray-700 hover:text-gray-500 hover:underline"
           >
             Kontakt
           </a>
           <a
             href="/about"
-            className="text-slate-600 hover:text-slate-500 hover:underline"
+            className="text-gray-700 hover:text-gray-500 hover:underline"
           >
             O Nama
           </a>
