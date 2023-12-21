@@ -9,8 +9,8 @@ const Cards = () => {
         title="Glitter"
       />
       <Card
-        src="/cake-toppers/zlatni/n&t.jpeg"
-        alt="Cake topper shaker, special"
+        src="/cake-toppers/zlatni/family.webp"
+        alt="Cake Topper obitelj"
         attribute="Best Seller"
         title="Mirror"
       />

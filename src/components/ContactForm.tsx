@@ -31,8 +31,7 @@ const ContactForm = ({
     setIsSubmitting(true);
     try {
       if (form.current) {
-        // await emailjs.sendForm(service, template, form.current, id);
-        console.log(form.current);
+        await emailjs.sendForm(service, template, form.current, id);
         form.current!.reset();
         setOpen(true);
       } else {
@@ -50,7 +49,7 @@ const ContactForm = ({
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="max-w-md mx-auto mt-8 bg-white p-8 border rounded-md shadow-md"
+        className="max-w-md mt-8 bg-white p-8 rounded-md shadow-md md:mr-10"
       >
         <div className="mb-10">
           <Input

@@ -103,34 +103,34 @@ const Term = () => {
               Kupac ima pravo na povratak robe u roku od 14, četrnaest, dana od
               dana dostave proizvoda Kupcu na adresu. Kupac je dužan obavjestiti
               o povratku robe prije isteka roka za povrat i to pismeno putem
-              elektronske pošte na XXXXXXXXXXXXXXXX. U slučaju povrata robe,
-              robu je potrebno vratiti neoštećenu, u nepromijenjenoj količini i
-              popraćenu kopijom računa. Kupac je odgovoran za svako umanjenje
-              vrijednosti proizvoda koje je rezultat rukovanja proizvodom. Kupac
-              mora izvršiti povrat proizvoda bez odgađanja, a najkasnije u roku
-              od 14 dana od dana obavjesti o povratku. Troškove povrata
-              proizvoda snosi Kupac. Ukoliko se nedvojbeno utvrdi da je
-              reklamacija na proizvod neopravdana ili da je do neispravnosti
-              naručenog proizvoda došlo zbog neadekvatnog rukovanja ili uporabe,
-              tada obrt Bonani nije dužan izvršiti povrat novca ili dostaviti
-              zamjenski proizvod. Reklamirani proizvod bit će vraćen Kupacu o
-              njegovom trošku uz pisano objašnjenje razloga neprihvaćanja
-              zahtjeva za povratom ili zamjenom. Obrt Bonani će izvršiti povrat
-              plaćenog tek nakon što mu proizvod bude vraćen odnosno, nakon što
-              mu Kupac dostavi dokaz da je proizvod na isti način na koji mu je
-              dostavljen, poslao natrag. Ukoliko je došlo do pogreške te kupac
-              nije dobio naručeni proizvod, dužan je navedeno prijaviti pismeno
-              putem elektronske pošte na XXXXXXXXXXXXXXXXXXX u roku od osam, 8,
-              dana. U tom slučaju, Kupac vraća krivo isporučen proizvod na
-              trošak obrta Bonani koji se obvezuje isporučiti naručeni proizvod
-              ili izvršiti povrat novca, sukladno zahtjevu Kupaca, u roku od
-              petnaest, 15, dana od zaprimljenog krivo isporučenog artikla.
-              Ukoliko Kupac nije dobio naručeni i plaćeni proizvod, dužan je to
-              prijaviti u roku od osam, 8, dana od dana očekivanog dolaska
-              naručenog proizvoda pismeno putem elektronske pošte na
-              XXXXXXXXXXXXXX. Sve eventualne sporove Kupac i obrta Bonani
-              rješavat će primjenom Zakona o zaštiti potrošača i Zakona o
-              obveznim odnosima.
+              elektronske pošte na shop.bonani@gmail.com. U slučaju povrata
+              robe, robu je potrebno vratiti neoštećenu, u nepromijenjenoj
+              količini i popraćenu kopijom računa. Kupac je odgovoran za svako
+              umanjenje vrijednosti proizvoda koje je rezultat rukovanja
+              proizvodom. Kupac mora izvršiti povrat proizvoda bez odgađanja, a
+              najkasnije u roku od 14 dana od dana obavjesti o povratku.
+              Troškove povrata proizvoda snosi Kupac. Ukoliko se nedvojbeno
+              utvrdi da je reklamacija na proizvod neopravdana ili da je do
+              neispravnosti naručenog proizvoda došlo zbog neadekvatnog
+              rukovanja ili uporabe, tada obrt Bonani nije dužan izvršiti povrat
+              novca ili dostaviti zamjenski proizvod. Reklamirani proizvod bit
+              će vraćen Kupacu o njegovom trošku uz pisano objašnjenje razloga
+              neprihvaćanja zahtjeva za povratom ili zamjenom. Obrt Bonani će
+              izvršiti povrat plaćenog tek nakon što mu proizvod bude vraćen
+              odnosno, nakon što mu Kupac dostavi dokaz da je proizvod na isti
+              način na koji mu je dostavljen, poslao natrag. Ukoliko je došlo do
+              pogreške te kupac nije dobio naručeni proizvod, dužan je navedeno
+              prijaviti pismeno putem elektronske pošte na shop.bonani@gmail.com
+              u roku od osam, 8, dana. U tom slučaju, Kupac vraća krivo
+              isporučen proizvod na trošak obrta Bonani koji se obvezuje
+              isporučiti naručeni proizvod ili izvršiti povrat novca, sukladno
+              zahtjevu Kupaca, u roku od petnaest, 15, dana od zaprimljenog
+              krivo isporučenog artikla. Ukoliko Kupac nije dobio naručeni i
+              plaćeni proizvod, dužan je to prijaviti u roku od osam, 8, dana od
+              dana očekivanog dolaska naručenog proizvoda pismeno putem
+              elektronske pošte na shop.bonani@gmail.com. Sve eventualne sporove
+              Kupac i obrta Bonani rješavat će primjenom Zakona o zaštiti
+              potrošača i Zakona o obveznim odnosima.
             </Typography>
           </TimelineBody>
         </TimelineItem>

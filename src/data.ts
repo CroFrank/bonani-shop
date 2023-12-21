@@ -33,24 +33,24 @@ export const data = [
     path: "hammer",
   },
   {
-    label: "Zlatni",
+    label: "Mirror",
     value: "zlatni",
     imgs: [
       {
         id: "n&t",
-        img: "n&t.jpeg",
+        img: "n_t.webp",
         text: "Dimenzije cca. Širina 15cm x Visina 13cm + štapić (prilagodivo). Svi topperi imaju pričvršćen plastični ili drveni štapić za učvrščivanje na tortu.",
         price: "6,5 €",
       },
       {
         id: "Sretna 50 godisnjica braka",
-        img: "sretna-50-godisnjica-braka.jpeg",
+        img: "sretna-50-godisnjica-braka.webp",
         text: "Dimenzije cca. Širina 15cm x Visina 12cm + štapić (prilagodivo). Svi topperi imaju pričvršćen plastični ili drveni štapić za učvrščivanje na tortu.",
         price: "7,5 €",
       },
       {
         id: "Family",
-        img: "family.jpeg",
+        img: "family.webp",
         text: "Dimenzije cca. Širina 13cm x Visina 15cm + štapić (prilagodivo). Svi topperi imaju pričvršćen plastični ili drveni štapić za učvrščivanje na tortu.",
         price: "6,5 €",
       },
@@ -59,7 +59,7 @@ export const data = [
     path: "zlatni",
   },
   {
-    label: "Sjajni",
+    label: "Glitter",
     value: "sjajni",
     imgs: [
       {

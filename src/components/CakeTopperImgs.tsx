@@ -14,7 +14,7 @@ export function CakeTopperImgs() {
       <TabsHeader className="w-full lg:w-2/3 mx-auto bg-roza3">
         {data.map(({ label, value }) => (
           <Tab key={value} value={value}>
-            {label}
+            {label.toUpperCase()}
           </Tab>
         ))}
       </TabsHeader>

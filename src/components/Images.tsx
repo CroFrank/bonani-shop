@@ -8,6 +8,7 @@ import {
   PopoverHandler,
   PopoverContent,
 } from "@material-tailwind/react";
+import { useState } from "react";
 
 interface CakeTopperProps {
   img: string;
@@ -25,8 +26,16 @@ const Images = ({
   alt: string;
   path: string;
 }) => {
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => setOpen(true);
+
   return (
-    <div className="mx-auto max-w-screen-xl px-4 md:px-8 mt-10">
+    <div
+      className={`mx-auto max-w-screen-xl px-4 md:px-8 mt-10" ${
+        open ? "bg-black/50" : ""
+      }`}
+    >
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-8">
         {images.map((image: CakeTopperProps, i: number) => (
           <div
@@ -56,12 +65,15 @@ const Images = ({
                       }}
                     >
                       <PopoverHandler>
-                        <Button className="bg-roza3 tracking-wider font-semibold">
+                        <Button
+                          className="bg-roza3 tracking-wider font-semibold"
+                          onClick={handleOpen}
+                        >
                           Doznaj Više
                         </Button>
                       </PopoverHandler>
-                      <PopoverContent className="z-[999] grid w-full h-2/3 grid-cols-1 md:grid-cols-2 md:w-5/6 xl:w-2/3 2xl:w-1/2 overflow-hidden p-0">
-                        <div className="min-h-full !w-full p-3">
+                      <PopoverContent className="z-[999] grid w-full sm:h-2/3 h-5/6 grid-cols-1 md:grid-cols-2 md:w-5/6 xl:w-2/3 2xl:w-1/2 overflow-hidden p-0">
+                        <div className="relative min-h-full !w-full p-3">
                           <img
                             src={`/cake-toppers/${path}/${image.img}`}
                             alt={alt}

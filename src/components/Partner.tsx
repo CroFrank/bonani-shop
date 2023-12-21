@@ -25,9 +25,9 @@ export function Partner({
       <div className="text-center">
         <CardBody>
           <Typography
-            variant="h5"
+            variant="h3"
             color="blue-gray"
-            className="mb-2 tracking-widest font-normal"
+            className="mb-2 tracking-widest font-normal text-lg"
           >
             {title}
           </Typography>

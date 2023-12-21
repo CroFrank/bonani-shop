@@ -34,6 +34,7 @@ const HeroCard = ({ title, description, src, route }: HeroCardProps) => {
                 color="white"
                 variant="outlined"
                 className="xl:text-xl tracking-widest hover:bg-white hover:text-zelena"
+                aria-label="go to next image"
               >
                 Zaviri u ponudu
               </Button>

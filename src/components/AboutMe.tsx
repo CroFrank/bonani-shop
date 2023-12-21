@@ -11,7 +11,7 @@ const {
 
 const AboutMe = () => {
   return (
-    <div className="container px-4" style={{ maxWidth: "800px" }}>
+    <div className="container px-4 text-justify" style={{ maxWidth: "800px" }}>
       <Timeline>
         <TimelineItem>
           <TimelineConnector />
@@ -24,19 +24,35 @@ const AboutMe = () => {
           <TimelineBody className="pb-8">
             <Typography
               variant="paragraph"
-              className="font-normal text-gray-600"
+              className="font-normal text-gray-600 mt-5"
             >
-              Obrt "Bonani" proizašao je iz strastvenog hobija prema lijepim
-              stvarima i pažljivom radu na detaljima. Počelo je kao kreativan
-              izraz ljubavi prema umjetnosti ukrašavanja, a danas je izraslo u
-              uspješan posao. Ovaj obrt fokusira se na stvaranje cake toppera za
-              torte i kolače te raznih kreacija namijenjenih za poklon ili ukras
-              te konstantno donosimo nove proizvode i ideje. Od personaliziranih
-              dekoracija za dom do posebnih događanja, Bonani nastoji
-              unaprijediti ljepotu svakodnevnog života kroz estetski dovršene
-              proizvode. Osnovna filozofija obrta je pridavanje važnosti svakom
-              detalju i stvaranje predmeta koji ne samo da uljepšavaju prostor,
-              već i izazivaju osjećaj sreće i zadovoljstva.
+              Pozdrav svima, moje ime je Bojana i drago mi je da Vam ovdje mogu
+              pokazati svoje radove. Bonani je skraćenica punog imena moje
+              sestre i mene, a nastao je kao dugogodišnji zajednički hobi gdje
+              je bilo puno eksperimetiranja, a danas je to pravi posao!
+              <br /> Moj poslovni put počeo je drugačije, ali želja za
+              kreativnim izražavanjem, koja traje od osnovnoškolskih dana, bila
+              je dovoljno jaka da kreativan izraz ljubavi prema izradi pretvorim
+              u posao. A kad ti život da priliku da se baviš onime što voliš,
+              zgrabiš ju!
+              <br /> Tako je stvoren obrt Bonani. Strastveni hobi prema lijepim
+              stvarima i pažljivom radu na detaljima doveo me do toga da imam
+              priliku izrađivati upravo te lijepe stvari za život.
+              <br /> Nije uvijek lako i ne ide uvijek sve po planu, međutim na
+              kraju svake kiše dolazi sunce pa tako bez obzira na sve –
+              nastavljam gledati prema suncu.
+              <br /> Prvenstveno je fokus na izrađivanju Cake Toppera kao ukras
+              za slastice za sve koji žele ukrasiti torte, kolače, muffine i
+              slično. A obzirom na ljubav općenito prema kreativnosti,
+              konstantno donosim nove proizvode i ideje. Bonani nastoji
+              unaprijediti ljepotu svakodnevnog života. Osnovna filozofija obrta
+              je pridavanje važnosti svakom detalju i stvaranje predmeta koji ne
+              samo da uljepšavaju prostor, već i izazivaju osjećaj sreće i
+              zadovoljstva za sve one kojima i najmanja sitnica može uljepšati
+              dan.
+              <br /> Veselim se svakom novom projektu i radujem se suradnji,
+              <br />
+              Bojana
             </Typography>
           </TimelineBody>
         </TimelineItem>
@@ -52,16 +68,15 @@ const AboutMe = () => {
           <TimelineBody className="pb-8">
             <Typography
               variant="paragraph"
-              className="font-normal text-gray-600 leading-6"
+              className="font-normal text-gray-600 leading-6 mt-5"
             >
-              Ukrase proizvodimo isključivo po narudžbi te nemamo niti jedan
-              proizvod "na stanju". Ukrasi kao što su Cake Topperi su najčešće
-              gotovi unutar jednog dana, ali ovisno o zahtjevnosti narudžbe i
-              količini može potrajati i duže. Cijene proizvoda na stranici su
-              već definirane, međutim kako se radi o ručnom i kreativnom radu za
-              proizvode rađene po željama naknadno se definira cijena. Stojimo
-              na raspolaganju za Vaše želje i prijedloge te ćemo se potruditi
-              napraviti nabolje moguće za Vas.
+              Proizvode radim isključivo po narudžbi, u dogovoru s Vama stoga
+              nemam proizvode „na stanju”.
+              <br /> Rok isporuke ovisi o zahtjevnosti i količini, ali sve se
+              definira prilikom same narudžbe. Naravno, ukoliko je iz bilo kojeg
+              razloga nešto hitnije, svakako nastojim izaći u susret koliko god
+              je to moguće. Tako je, osim dostave kurirskim službama, moguće i
+              osobno preuzimanje na adresi Hećimovićeva ulica 3, Zagreb.
             </Typography>
           </TimelineBody>
         </TimelineItem>
@@ -77,10 +92,15 @@ const AboutMe = () => {
           <TimelineBody className="pb-8">
             <Typography
               variant="paragraph"
-              className="font-normal text-gray-600 leading-6"
+              className="font-normal text-gray-600 leading-6 mt-5"
             >
-              Nakon što izaberete svoj proizvod ili dogovorimo izradu neke teme
-              po Vaše
+              Cijene proizvoda na stranici već su definirane, međutim kako se
+              radi o ručnom i kreativnom radu, ukoliko želite neke promjene u
+              izgledu i/ili veličini, prema tome se naknadno definira cijena.
+              Napominjem kako je cilj napraviti najbolje moguće za Vas stoga se
+              prilikom naručivanja dogovaramo o svim detaljima, roku isporuke i
+              cijeni kako biste odmah dobili točne informacije o proizvodu kojeg
+              naručujete.
             </Typography>
           </TimelineBody>
         </TimelineItem>

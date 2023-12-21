@@ -3,16 +3,13 @@ import Layout from "../layouts/Layout.astro"
 import AboutMe from "../components/AboutMe"
 ---
 
-<style>
-  .section {
-    background-image: url("/bojana.jpg");
-    background-size: cover;
-    background-position: center;
-  }
-</style>
 <Layout>
-  <section class="flex flex-col items-center mb-28">
-    <div class="section h-half mx-auto w-full mb-20"></div>
+  <section
+    class="flex flex-col items-center md:flex-row-reverse md:justify-center gap-8 md:items-start py-28 bg-roza2"
+  >
+    <div class="mb-16 md:mb-0">
+      <img src="/bojana.webp" alt="Slika Bojane" width="500px" />
+    </div>
     <AboutMe />
   </section>
 </Layout>
