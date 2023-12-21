@@ -79,11 +79,11 @@ const Term = () => {
           <TimelineBody className="pb-8">
             <Typography variant="small" className="font-normal text-gray-600">
               Nakon što Vas obrt Bonani obavijesti da je proizvod napravljen,
-              isti možete preuzeti na adresi Hećimovićeva 3, 10000 Zagreb u
-              prethodno dogovorenom terminu u roku od 14 dana. Ako je dogovorena
-              isporuka putem pošte ili Tiska, obrt Bonani će proizvod nakon
-              izrade poslati u najkraćem mogućem roku, ali ne duže od 3 radna
-              dana.
+              isti možete preuzeti na adresi Hećimovićeva ulica 3, 10000 Zagreb
+              u prethodno dogovorenom terminu u roku od 14 dana. Ako je
+              dogovorena isporuka putem pošte ili Tiska, obrt Bonani će proizvod
+              nakon izrade poslati u najkraćem mogućem roku, ali ne duže od 3
+              radna dana.
             </Typography>
           </TimelineBody>
         </TimelineItem>
@@ -129,7 +129,7 @@ const Term = () => {
               plaćeni proizvod, dužan je to prijaviti u roku od osam, 8, dana od
               dana očekivanog dolaska naručenog proizvoda pismeno putem
               elektronske pošte na shop.bonani@gmail.com. Sve eventualne sporove
-              Kupac i obrta Bonani rješavat će primjenom Zakona o zaštiti
+              Kupac i obrt Bonani rješavat će primjenom Zakona o zaštiti
               potrošača i Zakona o obveznim odnosima.
             </Typography>
           </TimelineBody>

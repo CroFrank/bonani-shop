@@ -1,20 +1,13 @@
 export const data = [
   {
-    label: "Hammer",
+    label: "Basic",
     value: "hammer",
     imgs: [
       {
-        id: "Dual torta",
-        img: "dual-torta.jpeg",
-        text: "Cijena se odnosi na sve toppere vidljive na slici, 7 likova i jedan veći topper. Svi topperi imaju pričvršćen plastični ili drveni štapić za učvrščivanje na tortu.",
+        id: "Cure tek 42",
+        img: "curetek42.webp",
+        text: "Cijena se odnosi na sve toppere vidljive na slici.",
         price: "11 €",
-      },
-
-      {
-        id: "Ante is one",
-        img: "anteisone.jpeg",
-        text: "Cijena se odnosi na sve toppere vidljive na slici, 4 životinje i zlatni text.",
-        price: "8 €",
       },
       {
         id: "Jakov helloween",
@@ -23,10 +16,40 @@ export const data = [
         price: "9 €",
       },
       {
+        id: "Dual torta",
+        img: "dual-torta.jpeg",
+        text: "Cijena se odnosi na sve toppere vidljive na slici, 8 kom. Svi topperi imaju pričvršćen plastični ili drveni štapić za učvrščivanje na tortu.",
+        price: "8 €",
+      },
+      {
+        id: "Ante is one",
+        img: "anteisone.jpeg",
+        text: "Cijena se odnosi na sve toppere vidljive na slici, 4 životinje i zlatni text.",
+        price: "8 €",
+      },
+      {
+        id: "Barbie",
+        img: "barbie.webp",
+        text: "Cijena se odnosi na sve toppere vidljive na slici.",
+        price: "7 €",
+      },
+      {
+        id: "Antea 4",
+        img: "antea4.webp",
+        text: "Cijena se odnosi na sve toppere vidljive na slici.",
+        price: "6 €",
+      },
+      {
         id: "Unicorn flowers",
         img: "unicorn-flowers.jpeg",
         text: "Cijena je za 1 kom. Dimenzije cca. Širina 5cm x Visina 5cm + štapić (prilagodivo). Svi topperi imaju pričvršćen plastični ili drveni štapić za učvrščivanje na tortu.",
-        price: "0,5 €",
+        price: "1 €",
+      },
+      {
+        id: "Ladies",
+        img: "ladies.webp",
+        text: "Cijena se odnosi na sve toppere vidljive na slici.",
+        price: "5 €",
       },
     ],
     alt: "Cake topper od hammer papira",
@@ -37,22 +60,41 @@ export const data = [
     value: "zlatni",
     imgs: [
       {
-        id: "n&t",
-        img: "n_t.webp",
-        text: "Dimenzije cca. Širina 15cm x Visina 13cm + štapić (prilagodivo). Svi topperi imaju pričvršćen plastični ili drveni štapić za učvrščivanje na tortu.",
-        price: "6,5 €",
-      },
-      {
         id: "Sretna 50 godisnjica braka",
         img: "sretna-50-godisnjica-braka.webp",
         text: "Dimenzije cca. Širina 15cm x Visina 12cm + štapić (prilagodivo). Svi topperi imaju pričvršćen plastični ili drveni štapić za učvrščivanje na tortu.",
-        price: "7,5 €",
+        price: "7 €",
       },
+      {
+        id: "Mr & Mrs Pavelic",
+        img: "mr-mrs-pavelic.webp",
+        text: "Dimenzije cca. Širina 15cm x Visina 12cm + štapić (prilagodivo). Svi topperi imaju pričvršćen plastični ili drveni štapić za učvrščivanje na tortu.",
+        price: "7 €",
+      },
+      {
+        id: "Mr & Mrs",
+        img: "mr&mrs.webp",
+        text: "Dimenzije cca. Širina 15cm x Visina 13cm + štapić (prilagodivo). Svi topperi imaju pričvršćen plastični ili drveni štapić za učvrščivanje na tortu.",
+        price: "7 €",
+      },
+      {
+        id: "Marijeta",
+        img: "marijeta.webp",
+        text: "Dimenzije cca. Širina 15cm x Visina 15cm + štapić (prilagodivo). Svi topperi imaju pričvršćen plastični ili drveni štapić za učvrščivanje na tortu.",
+        price: "7 €",
+      },
+      {
+        id: "n&t",
+        img: "n&t.webp",
+        text: "Dimenzije cca. Širina 14cm x Visina 14cm + štapić (prilagodivo). Svi topperi imaju pričvršćen plastični ili drveni štapić za učvrščivanje na tortu.",
+        price: "6 €",
+      },
+
       {
         id: "Family",
         img: "family.webp",
-        text: "Dimenzije cca. Širina 13cm x Visina 15cm + štapić (prilagodivo). Svi topperi imaju pričvršćen plastični ili drveni štapić za učvrščivanje na tortu.",
-        price: "6,5 €",
+        text: "Dimenzije cca. Širina 12cm x Visina 14cm + štapić (prilagodivo). Svi topperi imaju pričvršćen plastični ili drveni štapić za učvrščivanje na tortu.",
+        price: "6 €",
       },
     ],
     alt: "Cake topper od zlatnog papira",
@@ -63,17 +105,18 @@ export const data = [
     value: "sjajni",
     imgs: [
       {
+        id: "Dama",
+        img: "dama.webp",
+        text: "Šljokavi papir. Dimenzije cca. Širina 14cm x Visina 14cm + štapić (prilagodivo). Svi topperi imaju pričvršćen plastični ili drveni štapić za učvrščivanje na tortu.",
+        price: "8 €",
+      },
+      {
         id: "Happy 30 birthday",
-        img: "happy-30-birthday.jpeg",
+        img: "happy-30-birthday.webp",
         text: "Šljokavi papir. Dimenzije cca. Širina 15cm x Visina 10cm + štapić (prilagodivo). Svi topperi imaju pričvršćen plastični ili drveni štapić za učvrščivanje na tortu.",
         price: "7,5 €",
       },
-      {
-        id: "Dama",
-        img: "dama.jpeg",
-        text: "Šljokavi papir. Dimenzije cca. Širina 14cm x Visina 14cm + štapić (prilagodivo). Svi topperi imaju pričvršćen plastični ili drveni štapić za učvrščivanje na tortu.",
-        price: "9 €",
-      },
+
       {
         id: "Cheers to 30 years",
         img: "cheersto30years.jpeg",
@@ -81,22 +124,22 @@ export const data = [
         price: "7,5 €",
       },
       {
+        id: "Tek nam je 25",
+        img: "teknamje25.jpeg",
+        text: "Šljokavi papir. Dimenzije cca. Širina 15cm x Visina 13cm + štapić (prilagodivo). Svi topperi imaju pričvršćen plastični ili drveni štapić za učvrščivanje na tortu.",
+        price: "7,5 €",
+      },
+      {
         id: "Forever 29",
-        img: "forever29.jpeg",
+        img: "forever29.webp",
         text: "Šljokavi papir. Dimenzije cca. Širina 15cm x Visina 10cm + štapić (prilagodivo). Svi topperi imaju pričvršćen plastični ili drveni štapić za učvrščivanje na tortu.",
-        price: "7 €",
+        price: "6,5 €",
       },
       {
         id: "P & L",
-        img: "p&l.jpeg",
+        img: "p&l.webp",
         text: "Šljokavi papir. Dimenzije cca. Širina 10cm x Visina 14cm + štapić (prilagodivo). Svi topperi imaju pričvršćen plastični ili drveni štapić za učvrščivanje na tortu.",
-        price: "7 €",
-      },
-      {
-        id: "Tek nam je 25",
-        img: "teknamje25.jpeg",
-        text: "Šljokavi papir. Dimenzije cca. Širina 15cm x Visina 12cm + štapić (prilagodivo). Svi topperi imaju pričvršćen plastični ili drveni štapić za učvrščivanje na tortu.",
-        price: "7 €",
+        price: "6,5 €",
       },
     ],
     alt: "Cake topper od sjajnog papira",
@@ -108,13 +151,19 @@ export const data = [
     imgs: [
       {
         id: "Eva 3 - SHAKER",
-        img: "eva3.jpeg",
+        img: "eva3.webp",
         text: "Dimenzije cca. Širina 16cm x Visina 15cm + štapić (prilagodivo). Napravljen u više slojeva koji se slažu jedan na drugi u razmaku od par milimetara. Punjeno šljokicama i konfetima.",
         price: "15 €",
       },
       {
+        id: "Nina 11",
+        img: "nina11.webp",
+        text: "Dimenzije glavnog toppera cca. Širina 15cm x Visina 15cm + štapić (prilagodivo). Napravljen u više slojeva. Cijena se odnosi na sve toppere sa slike.",
+        price: "15 €",
+      },
+      {
         id: "Mala sirena - SHAKER",
-        img: "mala-sirena.jpeg",
+        img: "mala-sirena.webp",
         text: "Dimenzije cca. Širina 12cm x Visina 15cm + štapić (prilagodivo). Napravljen u više slojeva koji se slažu jedan na drugi u razmaku od par milimetara. Punjeno šljokicama i konfetima.",
         price: "15 €",
       },
@@ -122,8 +171,28 @@ export const data = [
         id: "Prva sveta pričest",
         img: "prva-sveta-pricest.jpeg",
         text: "Dimenzije cca. Širina 15cm x Visina 12cm + štapić (prilagodivo). Napravljen u više slojeva koji se slažu jedan na drugi u razmaku od par milimetara.",
-        price: "13,5 €",
+        price: "13 €",
       },
+      {
+        id: "Mila 3",
+        img: "mila3.webp",
+        text: "Dimenzije cca. Širina 15cm x Visina 12cm + štapić (prilagodivo). Napravljen u više slojeva koji se slažu jedan na drugi u razmaku od par milimetara.",
+        price: "13 €",
+      },
+      {
+        id: "Lena 6",
+        img: "lena6.webp",
+        text: "Dimenzije cca. Širina 13cm x Visina 13cm + štapić (prilagodivo). Napravljen u više slojeva.",
+        price: "12 €",
+      },
+
+      {
+        id: "Kaja 2",
+        img: "kaja2.webp",
+        text: "Dimenzije cca. Širina 12cm x Visina 15cm + štapić (prilagodivo). Napravljen u više slojeva.",
+        price: "11 €",
+      },
+
       {
         id: "Unikorn",
         img: "unicorn.jpg",
@@ -177,6 +246,18 @@ export const data = [
         img: "sara3.jpeg",
         text: "Dimenzije cca. Širina 11cm x Visina 15cm + štapić (prilagodivo). Napravljen u više slojeva.",
         price: "10 €",
+      },
+      {
+        id: "Tesa 6",
+        img: "tesa6.webp",
+        text: "Dimenzije cca. Širina 12cm x Visina 14cm + štapić (prilagodivo). Napravljen u više slojeva.",
+        price: "10 €",
+      },
+      {
+        id: "Bartol 9",
+        img: "bartol9.webp",
+        text: "Dimenzije cca. Širina 13cm x Visina 14cm + štapić (prilagodivo).",
+        price: "8 €",
       },
     ],
     alt: "Cake topper u više slojeva",

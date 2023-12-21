@@ -18,6 +18,9 @@ export default withMT({
         roza3: "#ddb7ac",
         zelena: "#999b85",
       },
+      fontFamily: {
+        letter: "Allura",
+      },
     },
   },
   plugins: [],

@@ -10,7 +10,7 @@ import { data } from "../data";
 
 export function CakeTopperImgs() {
   return (
-    <Tabs value="zlatni">
+    <Tabs value="3d">
       <TabsHeader className="w-full lg:w-2/3 mx-auto bg-roza3">
         {data.map(({ label, value }) => (
           <Tab key={value} value={value}>

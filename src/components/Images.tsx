@@ -40,14 +40,14 @@ const Images = ({
         {images.map((image: CakeTopperProps, i: number) => (
           <div
             key={i}
-            className="relative flex h-96 justify-end items-end overflow-hidden rounded-md shadow-lg"
+            className="relative flex h-96 justify-end items-end overflow-hidden"
           >
             <div className="absolute inset-0 flex h-full w-full object-cover object-center">
-              <Card className="w-full">
+              <Card className="w-full rounded-none bg-roza1">
                 <CardHeader
                   shadow={false}
                   floated={false}
-                  className="h-96 m-0 rounded-b-none"
+                  className="h-96 m-0 rounded-none"
                 >
                   <img
                     src={`/cake-toppers/${path}/${image.img}`}
@@ -66,7 +66,7 @@ const Images = ({
                     >
                       <PopoverHandler>
                         <Button
-                          className="bg-roza3 tracking-wider font-semibold"
+                          className="bg-roza3 tracking-wider font-semibold rounded-none"
                           onClick={handleOpen}
                         >
                           Doznaj Više

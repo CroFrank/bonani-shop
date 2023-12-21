@@ -36,7 +36,7 @@ export function Partner({
           <a
             target="_blank"
             href={link}
-            className="inline-block bg-zelena text-white font py-2 px-4 rounded transition duration-300 hover:bg-roza3 tracking-wider"
+            className="inline-block bg-zelena text-white font py-2 px-4 transition duration-300 hover:bg-roza3 tracking-wider"
           >
             Posjeti slastičarnicu
           </a>

@@ -38,16 +38,9 @@ const PrivacyPolicy = () => {
               Politika se ne primjenjuje na anonimne podatke. Anonimni podatak
               je podatak koji se ne može povezati s određenom fizičkom osobom.
               Poštujemo privatnost svojih korisnika i posjetitelja svojih
-              internetskih stranica. Bonani može u skladu sa zakonom prikupljati
-              određene podatke o korisnicima dobivene tijekom korištenja
-              internetskih stranica putem kolačića (cookies), koji ne sadrže
-              osobne podatke, te IP adrese koje su automatski zabilježene u
-              zapisima pristupa. Isti služe da bi web stranica radila optimalno.
-              Blokiranje kolačića je moguće, nakon čega ćete i dalje moći
-              pregledavati stranicu, no neke njezine mogućnosti neće Vam biti
-              dostupne. Vaši podaci obrađivat će se u svrhu vršenja ugovorenih
-              usluga, pružanja informacija o našim ponudama, novostima i
-              događanjima i promocijama.
+              internetskih stranica. Vaši podaci obrađivat će se u svrhu
+              izdavanja ponude i/ili računa, pružanja informacija o našim
+              ponudama, novostima i događanjima i promocijama.
             </Typography>
           </TimelineBody>
         </TimelineItem>
@@ -65,8 +58,7 @@ const PrivacyPolicy = () => {
               variant="small"
               className="font-normal text-gray-600 leading-6"
             >
-              • Ime i prezime • Adresa • e-mail • OIB • Kontakt broj •
-              Fotografije
+              • Ime i prezime • Adresa • e-mail • OIB • Kontakt broj
             </Typography>
           </TimelineBody>
         </TimelineItem>

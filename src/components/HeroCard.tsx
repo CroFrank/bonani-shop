@@ -33,7 +33,7 @@ const HeroCard = ({ title, description, src, route }: HeroCardProps) => {
                 size="sm"
                 color="white"
                 variant="outlined"
-                className="xl:text-xl tracking-widest hover:bg-white hover:text-zelena"
+                className="xl:text-lg tracking-widest hover:bg-white hover:text-zelena rounded-none"
                 aria-label="go to next image"
               >
                 Zaviri u ponudu

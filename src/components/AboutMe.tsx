@@ -52,7 +52,10 @@ const AboutMe = () => {
               dan.
               <br /> Veselim se svakom novom projektu i radujem se suradnji,
               <br />
-              Bojana
+              <br />
+              <em className="font-letter text-3xl block text-right pr-10 md:pr-16">
+                Bojana
+              </em>
             </Typography>
           </TimelineBody>
         </TimelineItem>
