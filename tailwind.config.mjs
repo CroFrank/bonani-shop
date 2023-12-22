@@ -7,6 +7,9 @@ export default withMT({
     fontFamily: {
       sans: ["Poppins"],
     },
+    screens: {
+      xs: { min: "450px", max: "639px" },
+    },
     extend: {
       height: {
         half: "50vh",
