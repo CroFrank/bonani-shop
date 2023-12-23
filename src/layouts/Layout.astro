@@ -34,7 +34,7 @@ const { title = "Bonani" } = Astro.props
     <title>{title}</title>
   </head>
   <body class="bg-roza1">
-    <Header />
+    <Header client:only />
     <NavBar client:load />
     <slot />
     <Footer client:only />
