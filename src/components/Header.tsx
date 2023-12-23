@@ -1,7 +1,23 @@
 const Header = () => {
+  const handleShare = async () => {
+    try {
+      if (navigator.share) {
+        await navigator.share({
+          title: "Bonani",
+          text: "Ukrasi za torte!",
+          url: window.location.href,
+        });
+        console.log("Shared successfully");
+      } else {
+        alert("Web Share API is not supported in this browser.");
+      }
+    } catch (error) {
+      console.error("Error sharing:", error);
+    }
+  };
   return (
     <section className="bg-roza3 w-full p-2 text-center tracking-wider">
-      <p>Besplatna dostava na narudžbe iznad 30€</p>
+      <button onClick={handleShare}>Podijeli ovu stranicu sa drugima</button>
     </section>
   );
 };

@@ -1,5 +1,13 @@
-import { Typography } from "@material-tailwind/react";
+import {
+  Button,
+  Dialog,
+  DialogBody,
+  DialogFooter,
+  DialogHeader,
+  Typography,
+} from "@material-tailwind/react";
 import Logo from "../ui/Logo";
+import { useState } from "react";
 
 const LINKS = [
   {
@@ -12,6 +20,7 @@ const LINKS = [
       { text: "O Nama", link: "/about" },
       { text: "Opći Uvjeti", link: "/terms" },
       { text: "Politika Privatnosti", link: "/privacy" },
+      { text: "Impressum" },
     ],
   },
   {
@@ -27,6 +36,9 @@ const LINKS = [
 ];
 
 export function Footer() {
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => setOpen(!open);
   return (
     <footer className="relative w-full mb-auto tracking-wider pt-4">
       <div className="mx-auto w-full max-w-7xl px-8">
@@ -47,8 +59,11 @@ export function Footer() {
                 {items.map((item) => (
                   <li key={item.text}>
                     <Typography
-                      as="a"
+                      as={item.link ? "a" : "button"}
                       href={item.link}
+                      onClick={() => {
+                        if (item.link === undefined) handleOpen();
+                      }}
                       color="gray"
                       className="py-1.5 font-normal transition-colors hover:text-blue-gray-900"
                     >
@@ -113,6 +128,32 @@ export function Footer() {
           </div>
         </div>
       </div>
+      <Dialog open={open} size="xs" handler={handleOpen}>
+        <DialogHeader>Podatci o prodavatelju</DialogHeader>
+        <DialogBody>
+          <p>
+            BONANI, obrt za proizvodnju, usluge i trgovinu, vl. Natalia Ninić
+            Prelec, Zagreb, Radmanovačka ulica 31
+          </p>
+          <p>
+            Phone number: <strong>+385976785381</strong>
+          </p>
+          <p>
+            Email address: <b>shop.bonani@gmail.com</b>
+          </p>
+          Zagrebačka banka IBAN HR2023600001103067714
+        </DialogBody>
+        <DialogFooter>
+          <Button
+            variant="text"
+            color="red"
+            onClick={() => setOpen(false)}
+            className="mr-1"
+          >
+            <span>Zatvori</span>
+          </Button>
+        </DialogFooter>
+      </Dialog>
     </footer>
   );
 }
