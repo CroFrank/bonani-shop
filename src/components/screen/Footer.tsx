@@ -124,7 +124,9 @@ export function Footer() {
                 </svg>
               </Typography>
             </a>
-            Made by: Fran Branković
+            <a href="https://www.weblifesupport.com/" title="Contact Developer">
+              Made by: Fran Branković
+            </a>
           </div>
         </div>
       </div>
