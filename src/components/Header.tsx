@@ -17,7 +17,9 @@ const Header = () => {
   };
   return (
     <section className="bg-roza3 w-full p-2 text-center tracking-wider">
-      <button onClick={handleShare}>Podijeli ovu stranicu sa drugima</button>
+      <button onClick={handleShare} className="tracking-widest text-white">
+        {"Podijeli stranicu sa drugima".toUpperCase()}
+      </button>
     </section>
   );
 };

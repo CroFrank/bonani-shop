@@ -49,7 +49,7 @@ export const data = [
         id: "Ladies",
         img: "ladies.webp",
         text: "Cijena se odnosi na sve toppere vidljive na slici.",
-        price: "5 €",
+        price: "7 €",
       },
     ],
     alt: "Cake topper od hammer papira",
