@@ -2,7 +2,7 @@ import Card from "./Card";
 
 const Cards = () => {
   return (
-    <section className="container mx-auto grid place-items-center grid-cols-2 xl:grid-cols-4 gap-1 gap-y-4 sm:gap-4 mb-16">
+    <section className="container mx-auto grid place-items-center grid-cols-2 lg:grid-cols-4 gap-1 gap-y-4 sm:gap-4 mb-16">
       <Card
         src="/cake-toppers/sjajni/happy-30-birthday.webp"
         alt="Cake Topper rođendan"

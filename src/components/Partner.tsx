@@ -11,7 +11,7 @@ export function Partner({
   link: string;
 }) {
   return (
-    <Card className="mb-20 w-full sm:w-2/3 lg:w-1/4 rounded-none">
+    <Card className="mb-20 w-80 lg:w-96 rounded-none">
       <CardHeader
         color="blue-gray"
         className="relative h-70 rounded-lg shadow-roza2"

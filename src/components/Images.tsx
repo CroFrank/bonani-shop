@@ -8,7 +8,6 @@ import {
   PopoverHandler,
   PopoverContent,
 } from "@material-tailwind/react";
-import { useState } from "react";
 
 interface CakeTopperProps {
   img: string;
@@ -26,16 +25,8 @@ const Images = ({
   alt: string;
   path: string;
 }) => {
-  const [open, setOpen] = useState(false);
-
-  const handleOpen = () => setOpen(true);
-  console.log(open);
   return (
-    <div
-      className={`mx-auto max-w-screen-xl px-4 md:px-8 mt-10" ${
-        open ? "bg-black/50" : ""
-      }`}
-    >
+    <div className={`mx-auto max-w-screen-xl px-4 md:px-8 mt-10`}>
       <div className="flex flex-wrap justify-center gap-y-5 gap-x-3">
         {images.map((image: CakeTopperProps, i: number) => (
           <Card className="w-full xs:w-80 sm:w-64 rounded-none bg-roza1">
@@ -60,10 +51,7 @@ const Images = ({
                   }}
                 >
                   <PopoverHandler>
-                    <Button
-                      className="bg-roza3 tracking-wider font-semibold rounded-none"
-                      onClick={() => console.log("sfsd")}
-                    >
+                    <Button className="bg-roza3 tracking-wider font-semibold rounded-none">
                       Doznaj Više
                     </Button>
                   </PopoverHandler>

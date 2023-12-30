@@ -27,16 +27,31 @@ const HeroCard = ({ title, description, src, route }: HeroCardProps) => {
           >
             {description}
           </Typography>
-          <div className="flex justify-center gap-2">
-            <a href={route}>
+          <div className="flex flex-col md:flex-row justify-center gap-4">
+            <a href={src !== "carousel/kaja2.webp" ? "/" : route}>
+              <Button
+                size="sm"
+                color="green"
+                variant="filled"
+                className="xl:text-lg tracking-widest hover:bg-white hover:text-zelena rounded-none bg-zelena hover:shadow-none"
+                aria-label="go to next image"
+                disabled={src !== "carousel/kaja2.webp" ? true : false}
+              >
+                Zaviri u ponudu
+              </Button>
+            </a>
+            <a
+              href="/contact
+            "
+            >
               <Button
                 size="sm"
                 color="white"
                 variant="outlined"
-                className="xl:text-lg tracking-widest hover:bg-white hover:text-zelena rounded-none"
+                className="xl:text-lg tracking-widest hover:bg-white hover:text-zelena rounded-none border-zelena"
                 aria-label="go to next image"
               >
-                Zaviri u ponudu
+                Kontakt
               </Button>
             </a>
           </div>

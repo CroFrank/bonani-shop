@@ -7,7 +7,7 @@ const Hero = () => {
       <Carousel
         transition={{ duration: 2 }}
         className="overflow-hidden"
-        autoplay={true}
+        autoplay={false}
         autoplayDelay={5000}
         loop={true}
       >
