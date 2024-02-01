@@ -1,4 +1,5 @@
 ---
+import SpeedInsights from "@vercel/speed-insights/astro"
 import NavBar from "../components/screen/Navbar"
 import Header from "../components/Header"
 import { Footer } from "../components/screen/Footer"
@@ -42,6 +43,7 @@ const { title = "Torta za svaku prigodu - Bonani" } = Astro.props
     <slot />
     <Footer client:only />
     <BackToTop />
+    <SpeedInsights />
   </body>
 </html>
 
