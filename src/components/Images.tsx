@@ -28,7 +28,7 @@ const Images = ({
   return (
     <div className={`mx-auto max-w-screen-xl px-4 md:px-8 mt-10`}>
       <div className="flex flex-wrap justify-center gap-y-5 gap-x-3">
-        {images.map((image: CakeTopperProps, i: number) => (
+        {images.map((image: CakeTopperProps) => (
           <Card className="w-full xs:w-80 sm:w-64 rounded-none bg-roza1">
             <CardHeader
               shadow={false}

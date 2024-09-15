@@ -1,9 +1,6 @@
 ---
 import ContactForm from "../components/ContactForm"
 import Layout from "../layouts/Layout.astro"
-const service = import.meta.env.SERVICE
-const template = import.meta.env.TEMPLATE
-const id = import.meta.env.ID
 ---
 
 <Layout>
@@ -16,7 +13,7 @@ const id = import.meta.env.ID
       </p>
     </div>
     <div class="flex flex-col items-center md:flex-row justify-center">
-      <ContactForm client:only service={service} template={template} id={id} />
+      <ContactForm client:load />
       <div
         class="my-10 flex flex-col items-center justify-center gap-10 md:border-l-2 md:border-zelena md:pl-10"
         style={{ maxWidth: "1000px" }}

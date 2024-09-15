@@ -1,39 +1,50 @@
-import { useRef, type FormEvent, useState } from "react";
-import emailjs from "@emailjs/browser";
-import {
-  Button,
-  Dialog,
-  DialogHeader,
-  DialogBody,
-  DialogFooter,
-  Input,
-  Textarea,
-} from "@material-tailwind/react";
+import { type FormEvent, useState } from "react";
+import { useFormspark } from "@formspark/use-formspark";
 
-const ContactForm = ({
-  service,
-  template,
-  id,
-}: {
-  service: string;
-  template: string;
-  id: string;
-}) => {
+import FormInput from "./form/FormInput";
+import Textarea from "./form/Textarea";
+import Checkbox from "./form/Checkbox";
+import Modal from "./Modal";
+
+const FORMSPARK_FORM_ID = "Khr6vmn2q";
+
+const ContactForm = () => {
+  const [submit, submitting] = useFormspark({
+    formId: FORMSPARK_FORM_ID,
+  });
+
+  const [name, setName] = useState("John Doe");
+  const [email, setEmail] = useState("example@gmail.com");
+  const [message, setMessage] = useState("Zanimaju me topperi.");
+  const [agreed, setAgreed] = useState(false);
+
+  const formData = new FormData();
+  formData.append("name", name);
+  formData.append("email", email);
+  formData.append("message", message);
+  formData.append("agreed", agreed.toString());
+
   const [isSubmiting, setIsSubmitting] = useState(false);
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => setOpen(false);
-
-  const form = useRef<HTMLFormElement | null>(null);
-
+  const requiredFields = ["name", "email", "message", "agreed"];
+  const allFieldsPresent = requiredFields.every((field) => formData.has(field));
   const sendEmail = async (e: FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      if (form.current) {
-        await emailjs.sendForm(service, template, form.current, id);
-        form.current!.reset();
-        setOpen(true);
+      if (allFieldsPresent) {
+        await submit({
+          name: formData.get("name"),
+          email: formData.get("email"),
+          message: formData.get("message"),
+          agreed: formData.get("agreed"),
+        });
+        setName("");
+        setEmail("");
+        setMessage("");
+        setAgreed(false);
       } else {
         console.log("Form reference is not available.");
       }
@@ -41,84 +52,53 @@ const ContactForm = ({
       console.error("Error sending email:", error);
     } finally {
       setIsSubmitting(false);
+      setOpen(true);
     }
   };
-
   return (
     <>
       <form
-        ref={form}
         onSubmit={sendEmail}
         className="max-w-md mt-8 bg-white p-8 rounded-md shadow-md md:mr-10"
       >
-        <div className="mb-10">
-          <Input
-            label="Tvoje ime ili nadimak"
-            name="from_name"
-            required
-            minLength={2}
-            maxLength={20}
-            type="text"
-            crossOrigin="anonymous"
-          />
-        </div>
-        <div className="mb-10">
-          <Input
-            label="Tvoj email"
-            type="email"
-            name="from_email"
-            required
-            minLength={6}
-            maxLength={30}
-            crossOrigin="anonymous"
-          />
-        </div>
-        <div className="mb-8">
-          <Textarea
-            label="Poruka *"
-            name="message"
-            rows={6}
-            required
-            minLength={3}
-            maxLength={350}
-          />
-        </div>
-        <label className="text-sm">
-          <input
-            type="checkbox"
-            id="privacyCheckbox"
-            name="privacyCheckbox"
-            required
-          />{" "}
-          Suglasni ste da se vaši podaci obrađuju u skladu sa našom{" "}
-          <a href="/privacy" className="text-blue-700">
-            Politikom privatnosti
-          </a>
-        </label>
+        <FormInput
+          type="text"
+          text="Ime"
+          value={name}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+            setName(e.target.value)
+          }
+        />
+        <FormInput
+          type="email"
+          text="Vaš email"
+          value={email}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+            setEmail(e.target.value)
+          }
+        />
+        <Textarea
+          value={message}
+          onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) =>
+            setMessage(e.target.value)
+          }
+        />
+        <Checkbox
+          checked={agreed}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+            setAgreed(e.target.checked)
+          }
+        />
+
         <button
+          disabled={submitting}
           type="submit"
           className="mt-8 w-full bg-roza3 text-white p-2 rounded-md hover:scale-105"
         >
           {isSubmiting ? "...Šaljem" : "Pošalji"}
         </button>
       </form>
-      <Dialog open={open} size="xs" handler={handleOpen}>
-        <DialogHeader>Poruka uspješno poslana</DialogHeader>
-        <DialogBody>
-          Hvala na Vašem interesu. Pokušat ćemo odgovoriti u najkraćem mogućem
-          vremenu.
-        </DialogBody>
-        <DialogFooter>
-          <Button
-            variant="text"
-            color="red"
-            onClick={() => setOpen(false)}
-            className="mr-1"
-          >
-            <span>Zatvori</span>
-          </Button>
-        </DialogFooter>
-      </Dialog>
+      <Modal isOpen={open} function={handleOpen} />
     </>
   );
 };

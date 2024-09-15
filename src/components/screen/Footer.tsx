@@ -125,7 +125,7 @@ export function Footer() {
               </Typography>
             </a>
             <a href="https://www.weblifesupport.com/" title="Contact Developer">
-              Made by: Fran Branković
+              Made by: Web Life Support
             </a>
           </div>
         </div>

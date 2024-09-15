@@ -1,5 +1,5 @@
 import pkg from "@material-tailwind/react";
-const { Card, CardHeader, CardBody, CardFooter, Typography, Button } = pkg;
+const { Card, CardHeader, CardBody, CardFooter, Typography } = pkg;
 
 export function Partner({
   src,
